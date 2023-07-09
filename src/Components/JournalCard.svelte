@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { Database } from '../types/database.types';
 	import { checkPostedToday } from '../util';
 
 	type Journal = {
