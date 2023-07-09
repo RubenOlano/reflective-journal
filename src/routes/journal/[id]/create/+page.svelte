@@ -7,6 +7,14 @@
 </script>
 
 <div class="form-container" in:fly={{ delay: 400 }} out:fade>
+	{#if form?.missing}
+		<p class="error">Please fill out all fields</p>
+	{/if}
+	{#if form?.success}
+		<p class="success">Entry created successfully!</p>
+		<a class="success-btn" href="/journal/{$page.data.id}">Back to Journal</a>
+		<a class="success-btn" href="/entry/{form.entry.id}">View Entry</a>
+	{/if}
 	<form class="form" method="POST">
 		<h1 class="title">Create a new Entry</h1>
 		<label class="label" for="title">
@@ -30,14 +38,6 @@
 		</label>
 		<button class="submit-btn" type="submit">Create</button>
 	</form>
-	{#if form?.missing}
-		<p class="error">Please fill out all fields</p>
-	{/if}
-	{#if form?.success}
-		<p class="success">Entry created successfully!</p>
-		<a class="success-btn" href="/journal/{$page.data.id}">Back to Journal</a>
-		<a class="success-btn" href="/entry/{form.entry.id}">View Entry</a>
-	{/if}
 </div>
 
 <style>
@@ -56,10 +56,17 @@
 		width: 50%;
 	}
 
+	@media (max-width: 768px) {
+		.form {
+			width: 80%;
+		}
+	}
+
 	.title {
 		font-size: 3rem;
 		font-weight: 700;
 		margin-bottom: 1rem;
+		text-align: center;
 	}
 
 	.label {

@@ -43,6 +43,7 @@
 		font-size: 2rem;
 		font-weight: 800;
 		margin-bottom: 1.5rem;
+		text-align: center;
 	}
 
 	.desc {

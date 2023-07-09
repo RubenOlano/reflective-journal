@@ -72,7 +72,7 @@
 		align-items: center;
 		justify-content: center;
 		margin-bottom: 2rem;
-		text-align: ce;
+		text-align: center;
 	}
 
 	.remind {
