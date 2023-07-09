@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { checkPostedToday } from '../util';
+	import { checkPostedToday } from '@/util';
 
 	type Journal = {
 		id: string;

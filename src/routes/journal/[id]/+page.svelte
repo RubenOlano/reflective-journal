@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { fade, fly } from 'svelte/transition';
-	import EntryCard from '../../../components/EntryCard.svelte';
+	import EntryCard from '@/components/EntryCard.svelte';
 	import type { PageData } from './$types';
-	import { checkPostedToday } from '../../../util';
+	import { checkPostedToday } from '@/util';
 
 	export let data: PageData;
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import type { SupabaseClient } from '@supabase/supabase-js';
-	import type { Database } from '../types/database.types';
+	import type { Database } from '@/types/database.types';
 
 	export let supabase: SupabaseClient<Database>;
 

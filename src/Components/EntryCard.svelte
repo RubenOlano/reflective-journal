@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fly, fade } from 'svelte/transition';
-	import type { Database } from '../types/database.types';
+	import type { Database } from '@/types/database.types';
 
 	type Entry = Database['public']['Tables']['entry']['Row'];
 	export let entry: Entry;
