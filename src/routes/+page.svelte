@@ -1,5 +1,5 @@
 <script lang="ts">
-	import JournalCard from '@/components/JournalCard.svelte';
+	import JournalCard from '$lib/JournalCard.svelte';
 	import type { PageData } from './$types';
 	import { fade, fly } from 'svelte/transition';
 
