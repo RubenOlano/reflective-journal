@@ -11,7 +11,7 @@
 <div class="container" in:fly={{ y: 200, duration: 1000, delay: 400 }} out:fade={{ duration: 200 }}>
 	<div class="welcome">
 		<h1 class="title">
-			Welcome to your Space, {name}!
+			Welcome, {name}!
 		</h1>
 	</div>
 
@@ -61,6 +61,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		text-align: center;
 	}
 
 	@media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
@@ -73,30 +74,13 @@
 	.title {
 		font-size: 3rem;
 		margin-bottom: 1rem;
+		text-align: center;
 	}
 
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		gap: 1rem;
-	}
-
-	@media (min-width: 640px) {
-		.grid {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
-	}
-
-	@media (min-width: 768px) {
-		.grid {
-			grid-template-columns: repeat(3, minmax(0, 1fr));
-		}
-	}
-
-	@media (min-width: 1024px) {
-		.grid {
-			grid-template-columns: repeat(4, minmax(0, 1fr));
-		}
 	}
 
 	.new-journal {

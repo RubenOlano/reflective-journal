@@ -32,9 +32,14 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		margin: auto;
-		padding: 2rem;
 		max-width: 80vw;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			max-width: 100vw;
+		}
 	}
 
 	.back-btn {

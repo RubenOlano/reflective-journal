@@ -36,7 +36,7 @@
 		border: none;
 		text-decoration: none;
 		transition: box-shadow 0.2s ease-in-out;
-		max-height: 20vh;
+		max-height: clamp(10rem, 20vw, 20rem);
 	}
 
 	.title {
@@ -66,14 +66,10 @@
 			background-color: #333;
 			color: #fff;
 		}
-	}
-
-	@media (prefers-color-scheme: dark) {
 		.card:hover {
 			box-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
 		}
 	}
-
 	.no-post {
 		font-size: 0.8rem;
 		font-weight: 400;
