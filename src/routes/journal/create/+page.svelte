@@ -34,7 +34,7 @@
 	{/if}
 	{#if form?.success}
 		<p class="success">Journal created successfully!</p>
-		<a class="success-btn" href="/journal/${form?.id}"> To Journal </a>
+		<a class="success-btn" href="/journal/{form?.id}"> To Journal </a>
 	{/if}
 </div>
 
